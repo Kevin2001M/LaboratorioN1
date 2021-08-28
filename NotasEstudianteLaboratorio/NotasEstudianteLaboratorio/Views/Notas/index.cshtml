@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>index</h2>
+
+@using (Html.BeginForm("Estudiante", "Notas", FormMethod.Post))
+{
+<div class="contenedor">
+
+    <label for="nombre">Nombre de Estudiante</label>
+    <br>
+    <input type="text" name="nombre" required placeholder="Escribe tu nombre">
+    <br>
+
+    <label>Lab1</label>
+    <br />
+    <input @*type="number"*@ name="Lab1" required />
+    <br />
+
+    <label>Lab2</label>
+    <br />
+    <input @*type="number"*@ name="Lab2" required />
+    <br />
+
+    <label>Lab3</label>
+    <br />
+    <input @*type="number"*@ name="Lab3" required />
+    <br />
+
+    <label>Par1</label>
+    <br />
+    <input @*type="number"*@ name="Par1" required />
+    <br />
+
+    <label>Par2</label>
+    <br />
+    <input @*type="number"*@ name="Par2" required />
+    <br />
+
+    <label>Par3</label>
+    <br />
+    <input @*type="number"*@ name="Par3" required />
+    <br />
+
+    <br />
+    <input type="submit" class="btn btn-success" value="Enviar">
+</div>
+  
+}

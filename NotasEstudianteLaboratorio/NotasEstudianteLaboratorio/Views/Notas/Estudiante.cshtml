@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Estudiante";
+}
+
+<h2>Estudiante</h2>
+
+<h3>@Html.ActionLink("ver","Resultado")</h3>
+
+<table class="table">
+    <th>
+        Nombre
+    </th>
+    <th>
+        Primer promedio
+    </th>
+    <th>
+        Segundo Promedio
+    </th>
+    <th>
+        Tercer Promedio
+    </th>
+    <th>
+        Promedio final
+    </th>
+    <tbody>
+        <tr>
+            <td>@ViewBag.nombre</td>
+            <td>@ViewBag.promedio1</td>
+            <td>@ViewBag.promedio2</td>
+            <td>@ViewBag.promedio3</td>
+            <td>@ViewBag.promFinal</td>
+        </tr>
+    </tbody>
+</table>
+
